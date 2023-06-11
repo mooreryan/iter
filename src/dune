@@ -1,12 +1,12 @@
-
 (library
  (name iter)
  (public_name iter)
  (wrapped false)
  (modules Iter IterLabels)
- (flags :standard -w +a -warn-error -a+8 -nolabels))
+ (flags :standard -w +a-102 -warn-error -a+8 -nolabels)
+ (modes :standard melange))
 
 (env
  (_
-  (flags :standard -w +a -warn-error -a+8 -strict-sequence)
+  (flags :standard -w +a-102 -warn-error -a+8)
   (ocamlopt_flags :standard -O3 -unbox-closures -unbox-closures-factor 20)))

@@ -1,2 +1,3 @@
-(lang dune 2.0)
+(lang dune 3.8)
 (name iter)
+(using melange 0.1)
